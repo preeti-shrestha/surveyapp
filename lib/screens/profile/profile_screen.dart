@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:surveyapp/screens/profile/viewProfile.dart';
-import 'package:surveyapp/util/route_settings.dart';
+import '../../../../surveyadmin/lib/util/route_settings.dart';
 import 'package:surveyapp/widgets/notification_badge.dart';
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

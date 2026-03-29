@@ -22,7 +22,6 @@ class _NotificationBadgeState extends State<NotificationBadge> {
           icon: Icon(
             CupertinoIcons.bell_solid,
             size: 30,
-            color: Color(0xFFeee6ff),
           ),
         ),
       ),

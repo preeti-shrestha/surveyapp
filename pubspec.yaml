@@ -41,6 +41,10 @@ dependencies:
   flutter_bloc: ^9.1.1
   firebase_core: ^4.4.0
   cloud_firestore: ^6.1.2
+  webview_flutter: ^4.13.1
+  bcrypt: ^1.2.0
+  firebase_auth: ^6.1.4
+  google_sign_in: ^7.2.0
 #  flutter_svg: ^2.0.9
 
 dev_dependencies:
@@ -81,6 +85,7 @@ flutter:
     - assets/images/
     - assets/images/logo/
     - assets/images/profile/
+    - assets/images/icon/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

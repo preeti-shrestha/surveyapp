@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:surveyapp/widgets/logout_dialog.dart';
 
+import '../../../surveyadmin/lib/util/route_settings.dart';
 import '../util/route_settings.dart';
 class AppDrawer extends StatefulWidget {
   final String currentRoute;
@@ -58,7 +60,12 @@ class _AppDrawerState extends State<AppDrawer> {
 
           ListTile(
             onTap: (){
-              Navigator.pushReplacementNamed(context, RouteHelper.login);
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return LogoutDialog();
+                }
+              );
             },
             leading: Icon(Icons.logout_rounded),
             title: Text("Logout",style: TextStyle(fontSize: 20)),

@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
 class AppTheme {
   static ThemeData lightTheme=ThemeData(
-    primaryColor: Colors.purple,
+    // primaryColor: Colors.purple,
+    colorScheme: ColorScheme.light(
+        brightness: Brightness.light,
+        primary: Colors.purple,
+        // onPrimary: Color(0xFFeee6ff),
+        // secondary: Colors.purple.shade50,
+        // onSecondary: Colors.purple,
+        // error: Colors.red,
+        // onError: Color(0xFFeee6ff),
+        surface: Colors.purple.shade50,
+        outline: Colors.purple.shade200
+        // onSurface: Colors.purple
+    ),
     fontFamily: 'Fira Sans',
 
     appBarTheme: AppBarThemeData(
@@ -20,6 +32,9 @@ class AppTheme {
       elevation: 8.0,
       shadowColor: Color(0xffcc99ff),
       scrolledUnderElevation: 8.0,
+      actionsIconTheme: IconThemeData(
+        color:Color(0xFFeee6ff)
+      )
     ),
 
     scaffoldBackgroundColor: Color(0xFFeee6ff),
@@ -179,11 +194,25 @@ class AppTheme {
       selectedItemColor: Colors.purple,
 
     ),
-
+    bottomSheetTheme: BottomSheetThemeData(
+      backgroundColor: Colors.purple.shade50,
+      dragHandleColor: Colors.purple,
+    ),
   );
   static ThemeData darkTheme=ThemeData.dark().copyWith(
-    primaryColor: Colors.purple,
-
+    // primaryColor: Colors.purple,
+    colorScheme: ColorScheme.dark(
+        brightness: Brightness.dark,
+        // primary: Colors.purple,
+        // onPrimary: Color(0xFFeee6ff),
+        // secondary: Colors.purple,
+        // onSecondary: Colors.purple,
+        // error: Colors.red,
+        // onError: Color(0xFFeee6ff),
+        // surface: Colors.purple.shade50,
+        // onSurface: Colors.purple,
+      outline: Colors.purple.shade200,
+    ),
     appBarTheme: AppBarThemeData(
       // backgroundColor: Colors.purple.,
       iconTheme: IconThemeData(
@@ -362,6 +391,10 @@ class AppTheme {
       unselectedItemColor: Colors.purple.shade400,
       selectedItemColor: Colors.purple.shade200,
     ),
+
+      bottomSheetTheme: BottomSheetThemeData(
+        dragHandleColor: Colors.purple.shade50,
+      )
 
   );
 }

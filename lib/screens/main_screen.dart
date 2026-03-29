@@ -8,8 +8,10 @@ import 'package:surveyapp/screens/logout/logout_screen.dart';
 import 'package:surveyapp/screens/profile/profile_screen.dart';
 import 'package:surveyapp/screens/profile/viewProfile.dart';
 import 'package:surveyapp/screens/settings/settings_screen.dart';
-import 'package:surveyapp/util/route_settings.dart';
 import 'package:surveyapp/widgets/notification_badge.dart';
+
+import '../util/route_settings.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -29,16 +31,21 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isLight=Theme.of(context).brightness==Brightness.light;
+    final logo= Image.asset(
+      'assets/images/logo/surveylogoappbar.png',
+      height: 40,
+    );
     return Scaffold(
       key: globalKey,
       appBar: AppBar(
-        title: ColorFiltered(
+        title: isLight? ColorFiltered(
                   colorFilter: ColorFilter.mode(
-                    Color(0xFFeee6ff), // The color you want to apply
-                    BlendMode.srcIn, // A common blend mode for solid color overlays
+                    Color(0xFFeee6ff),
+                    BlendMode.srcIn,
                   ),
-                  child: Image.asset('assets/images/logo/surveylogoappbar.png',height: 40,), // Your original image
-                ),
+                  child: logo, // Your original image
+                ):logo,
         actions: [
           NotificationBadge(),
         ],
