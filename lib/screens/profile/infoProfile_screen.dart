@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../../surveyadmin/lib/util/route_settings.dart';
 import '../../util/route_settings.dart';
 class InfoProfileScreen extends StatefulWidget {
   const InfoProfileScreen({super.key});

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:surveyapp/widgets/logout_dialog.dart';
 
-import '../../../../surveyadmin/lib/util/route_settings.dart';
 import '../../util/route_settings.dart';
 class ViewProfile extends StatefulWidget {
   const ViewProfile({super.key});

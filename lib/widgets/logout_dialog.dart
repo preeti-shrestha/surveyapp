@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import '../../../surveyadmin/lib/util/route_settings.dart';
 import '../util/route_settings.dart';
 class LogoutDialog extends StatefulWidget {
   const LogoutDialog({super.key});
